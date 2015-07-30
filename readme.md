@@ -2,9 +2,4 @@
 Little vanilla javascript to change default tab title to something like "Don't forget to read this" when you navigate to another tab.  
 
 As seen on Little Big Details, reported from InvisionApp:  
-![Changeable tab title](http://33.media.tumblr.com/e341e14053dfbb6ef2b90263d772bbae/tumblr_nayz0ydGYE1qea4hso1_400.gif)  
-
-### Usage
-Simply change the data attribute in your <title> and include the javascript file.  
-
-    <script src="tabTitleChange.js" async></script>
+![Changeable tab title](http://33.media.tumblr.com/e341e14053dfbb6ef2b90263d772bbae/tumblr_nayz0ydGYE1qea4hso1_400.gif)
