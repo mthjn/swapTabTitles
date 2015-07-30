@@ -1,0 +1,46 @@
+<head>
+<title data-alt-title="Say somethin'! Now!">Nada</title>
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+<style>
+h1,h2,h3,h4,h5,h6{font-family:"Permanent Marker";color: #CD8EA4;}
+</style>
+</head>
+<body>
+  <div id="content">
+    <div class="container"  style="max-width:40%">
+      <div class="row">
+       <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+         <h1>Swap tab titles when user navigates to another tab</h1>
+       </div>
+       <div class="col-lg-12 col-md-12 col-xs-12">
+        <h4>The HEAD section:</h4>
+        <pre>
+          &lt;title data-alt-title="Say somethin'! Now!"&gt;Nada&lt;/title&gt;
+        </pre>
+      </div>
+      <div class="col-lg-12 col-md-12 col-xs-12">
+        <h4>The magic:</h4>
+        <pre>
+        var originalTitle = document.title,
+         swapTitle = document.getElementsByTagName('title')[0].getAttribute('data-alt-title');
+          window.onblur = function () {
+            document.title = swapTitle;
+          }
+          window.onfocus = function() {
+            document.title = originalTitle;
+          }
+        </pre>
+       </div>
+       <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+        <img class="img-responsive" style="width:100%" src="http://33.media.tumblr.com/e341e14053dfbb6ef2b90263d772bbae/tumblr_nayz0ydGYE1qea4hso1_400.gif">
+       </div>
+     </div><!--row-->
+   </div><!--container-->
+ </div><!--content-->
+<script src="tabTitleChange.js" async></script>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
